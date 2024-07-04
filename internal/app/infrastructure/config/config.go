@@ -16,8 +16,8 @@ type Mongo struct {
 type AppConfig struct {
 	Environment string
 	Port        string
-	Kafka       string
-	Mongo       string
+	Kafka       Kafka
+	Mongo       Mongo
 }
 
 func NewAppConfig(path string) (*AppConfig, error) {
