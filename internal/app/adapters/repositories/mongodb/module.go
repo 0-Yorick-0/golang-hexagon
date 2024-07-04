@@ -19,7 +19,7 @@ var Module = fx.Options(
 			return MongoDBConfig{URI: conn}
 		},
 		func(cfg MongoDBConfig) (*mongo.Client, error) {
-			return ConntectToMongo(cfg)
+			return ConnectToMongo(cfg)
 		},
 	),
 	fx.Provide(
